@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" class="border-bottom">
+  <span>{{ title }}</span>
+  <span class="spacer"></span>
+  <button mat-icon-button aria-label="Logout icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="app-container">
+  <div class="app-navigation">
+    <mat-nav-list>
+      <mat-list-item
+        *ngFor="let link of links"
+        [routerLink]="link.link"
+        routerLinkActive="active"
+        class="app-nav-link"
+      >
+        <mat-icon>{{ link.icon }}</mat-icon>
+        <span>{{ link.display }}</span>
+      </mat-list-item>
+    </mat-nav-list>
+  </div>
+  <div class="app-page-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

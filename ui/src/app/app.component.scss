@@ -1,0 +1,21 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.app-navigation {
+  flex: 0 1 220px;
+  border-right: 1px solid #999;
+}
+
+.app-page-container {
+  flex: 1 1;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.app-nav-link.active {
+  background: #dadce0;
+}

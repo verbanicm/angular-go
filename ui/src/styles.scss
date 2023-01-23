@@ -1,0 +1,34 @@
+// Import theme file
+@import "theme.scss";
+
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  color: #000;
+  min-width: 600px;
+  min-height: 450px;
+  background: #fff;
+}
+
+#app-root {
+  height: 100%;
+  width: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #999;
+}
