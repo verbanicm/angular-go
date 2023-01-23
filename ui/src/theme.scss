@@ -1,0 +1,108 @@
+@import "node_modules/@angular/material/theming";
+
+@include mat-core();
+
+$primary: (
+  50: #ffffff,
+  100: #ffffff,
+  200: #ffffff,
+  300: #ffffff,
+  400: #ffffff,
+  500: #ffffff,
+  600: #ffffff,
+  700: #ffffff,
+  800: #ffffff,
+  900: #ffffff,
+  A100: "undefined",
+  A200: "undefined",
+  A400: "undefined",
+  A700: "undefined",
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: "undefined",
+    A200: "undefined",
+    A400: "undefined",
+    A700: "undefined",
+  ),
+);
+$accent: (
+  50: #777777,
+  100: #777777,
+  200: #777777,
+  300: #777777,
+  400: #777777,
+  500: #777777,
+  600: #777777,
+  700: #777777,
+  800: #777777,
+  900: #777777,
+  A100: "undefined",
+  A200: "undefined",
+  A400: "undefined",
+  A700: "undefined",
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: "undefined",
+    A200: "undefined",
+    A400: "undefined",
+    A700: "undefined",
+  ),
+);
+$warn: (
+  50: #ff9999,
+  100: #ff9999,
+  200: #ff9999,
+  300: #ff9999,
+  400: #ff9999,
+  500: #ff9999,
+  600: #ff9999,
+  700: #ff9999,
+  800: #ff9999,
+  900: #ff9999,
+  A100: "undefined",
+  A200: "undefined",
+  A400: "undefined",
+  A700: "undefined",
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: "undefined",
+    A200: "undefined",
+    A400: "undefined",
+    A700: "undefined",
+  ),
+);
+
+$theme-primary: mat-palette($primary);
+$theme-accent: mat-palette($accent);
+$theme-warn: mat-palette($warn);
+
+$app-theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
+
+@include angular-material-theme($app-theme);
